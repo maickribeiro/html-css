@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col " style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeira</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th scope="row"
+            >Total de Habitantes</th>
+            <td>0000</td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nisi temporibus sint impedit magni nam porro? Nostrum iure corporis unde sapiente sequi consectetur corrupti delectus iste cupiditate ullam optio suscipit voluptatum non voluptas distinctio vitae, sunt ea mollitia numquam voluptates error ratione. Harum nostrum recusandae corporis a quasi nemo, facere, sit dicta ducimus deleniti sequi, minima obcaecati vitae magnam commodi maxime accusantium! Excepturi est, explicabo accusamus ipsum, sit quod unde eligendi fugiat dolorem temporibus quas nihil asperiores sunt! Facilis illo eveniet aspernatur repellat corrupti incidunt quas laudantium minima dolores iusto ab ipsum ex voluptatum consequatur accusamus corporis provident, maxime dolore neque enim voluptate, ad libero quasi nam? Amet ex saepe, ut modi molestias tenetur totam repellat! Recusandae debitis quae provident nihil unde, molestiae hic voluptatibus dicta itaque, autem velit earum illum! Alias dicta ipsam minima voluptates natus veritatis voluptatem nulla facere earum itaque eius atque dolore vel ullam aspernatur ad delectus et amet, iste nisi impedit veniam sit quae? Quis, similique non in dolor amet eligendi vitae? nesciunt minima.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta rerum ullam corrupti ut eaque, quaerat architecto dolor eius deleniti hic? Officiis cum dolore eos repellat nesciunt neque eaque minima expedita, asperiores repellendus repudiandae vel ducimus. Porro quidem tenetur expedita provident harum, velit officiis ducimus quis odit voluptatibus! Illum itaque tempore magni delectus tenetur iure sapiente eum vitae illo sed exercitationem repellendus beatae velit consequuntur optio sunt, quae dolore, odit atque provident? Commodi voluptas tempore cum architecto nesciunt cumque ab, quidem amet repellendus accusantium illo, dolorum neque! Eos quo sit alias similique ratione, voluptatem beatae dolore et, suscipit delectus accusamus!</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quasi eius recusandae perspiciatis voluptates voluptas corporis illum magnam repellendus, et adipisci iusto maiores illo exercitationem, nobis minima. Ipsam enim fugit nisi eum deserunt sed pariatur fuga corporis cumque maxime debitis, dolore qui, autem nemo mollitia temporibus sequi saepe laborum praesentium.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quasi eius recusandae perspiciatis voluptates voluptas corporis illum magnam repellendus, et adipisci iusto maiores illo exercitationem, nobis minima. Ipsam enim fugit nisi eum deserunt sed pariatur fuga corporis cumque maxime debitis, dolore qui, autem nemo mollitia temporibus sequi saepe laborum praesentium.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quasi eius recusandae perspiciatis voluptates voluptas corporis illum magnam repellendus, et adipisci iusto maiores illo exercitationem, nobis minima. Ipsam enim fugit nisi eum deserunt sed pariatur fuga corporis cumque maxime debitis, dolore qui, autem nemo mollitia temporibus sequi saepe laborum praesentium.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quasi eius recusandae perspiciatis voluptates voluptas corporis illum magnam repellendus, et adipisci iusto maiores illo exercitationem, nobis minima. Ipsam enim fugit nisi eum deserunt sed pariatur fuga corporis cumque maxime debitis, dolore qui, autem nemo mollitia temporibus sequi saepe laborum praesentium.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quasi eius recusandae perspiciatis voluptates voluptas corporis illum magnam repellendus, et adipisci iusto maiores illo exercitationem, nobis minima. Ipsam enim fugit nisi eum deserunt sed pariatur fuga corporis cumque maxime debitis, dolore qui, autem nemo mollitia temporibus sequi saepe laborum praesentium.</p>
+</body>
+</html>
